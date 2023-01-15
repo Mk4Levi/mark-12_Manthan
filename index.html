@@ -15,18 +15,30 @@
   </head>
   <body>
     <header>
-      <h1> Triangles Properties </h1>
-      <nav>
+      <h1>Triangles Properties</h1>
+      <!-- <nav>
         <a href="./pages/angles-triangles.html">Is Triangle?</a>
         <a href="/">Quiz</a>
         <a href="./pages/calculate-hypo.html">Hypotenuse</a>
         <a href="./pages/calculate-area.html">Area of Triangle</a>
-      </nav>
+      </nav> -->
     </header>
     <main class="quiz-main">
       <h1>Quiz on triangles</h1>
       <h3>For each correct answer you will get 1 point</h3>
       <form class="quiz-form">
+        <div class="question-container">
+          <p>A triangle can have</p>
+          <label>
+            <input type="radio" name="question3" value="one right angle" />
+            one right angle
+          </label>
+          <label
+            ><input type="radio" name="question3" value="two right angles" />two
+            right angles</label
+          >
+        </div>
+
         <div class="question-container">
           <p>
             What is the third angle for the triangle where angle1 = 45° and
@@ -36,6 +48,31 @@
           <label><input type="radio" name="question1" value="90°" />90°</label>
           <label><input type="radio" name="question1" value="60°" />60°</label>
         </div>
+
+        <div class="question-container">
+          <p>Which of the following can form a right angled triangle?</p>
+          <label>
+            <input type="radio" name="question4" value="14, 15, 26" />
+            14, 15, 26
+          </label>
+          <label>
+            <input type="radio" name="question4" value="12, 16, 20" />
+            12, 16, 20</label
+          >
+        </div>
+
+        <div class="question-container">
+          <p>Which of the following triangles are always similar?</p>
+          <label>
+            <input type="radio" name="question5" value="Equilateral triangle" />
+            Equilateral triangle
+          </label>
+          <label>
+            <input type="radio" name="question5" value="Isosceles triangle" />
+            Isosceles triangle</label
+          >
+        </div>
+
         <div class="question-container">
           <p>
             What is the third angle for the triangle where angle1 = 45° and
@@ -52,39 +89,7 @@
             angled</label
           >
         </div>
-        <div class="question-container">
-          <p>A triangle can have</p>
-          <label>
-            <input type="radio" name="question3" value="one right angle" />
-            one right angle
-          </label>
-          <label
-            ><input type="radio" name="question3" value="two right angles" />two
-            right angles</label
-          >
-        </div>
-        <div class="question-container">
-          <p>Which of the following can form a right angled triangle?</p>
-          <label>
-            <input type="radio" name="question4" value="14, 15, 26" />
-            14, 15, 26
-          </label>
-          <label>
-            <input type="radio" name="question4" value="12, 16, 20" />
-            12, 16, 20</label
-          >
-        </div>
-        <div class="question-container">
-          <p>Which of the following triangles are always similar?</p>
-          <label>
-            <input type="radio" name="question5" value="Equilateral triangle" />
-            Equilateral triangle
-          </label>
-          <label>
-            <input type="radio" name="question5" value="Isosceles triangle" />
-            Isosceles triangle</label
-          >
-        </div>
+
         <div class="question-container">
           <p>
             If one angle of a triangle is obtuse, then which one of the
@@ -164,11 +169,12 @@
             45°
           </label>
         </div>
+        
       </form>
       <button class="btn-check" id="submit-answers-btn">Submit Answers</button>
       <h2 class="output"></h2>
     </main>
-    
+
     <script src="./scripts/quiz.js"></script>
   </body>
 </html>
