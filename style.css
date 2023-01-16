@@ -5,15 +5,16 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  background-color: rgb(122, 255, 242);
 }
 
 :root {
-  --primary-color: #7c3aed;
+  --primary-color:rgb(255, 115, 0);
 }
 
 body {
   font-family: "Work Sans", sans-serif;
-  text-align: center;
+  /* text-align: center; */
 }
 
 a {
@@ -30,25 +31,31 @@ header {
   padding: 1rem;
   background-color: var(--primary-color);
   color: #fff;
+  text-align: center;
 }
 
 header h1 {
-  font-family: "Megrim", cursive;
-  text-align: initial;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  /* text-align: initial; */
+  color: crimson;
 }
 
-nav {
+/* nav {
   text-align: right;
 }
-
+ */
 nav > a {
   padding: 0 0.5rem;
 }
 
 /* Main */
 
+.main-mk {
+  padding-left: 90px;
+}
+
 main {
-  margin: 0 0 7rem;
+  margin: 0 0 0rem;
 }
 
 main h1 {
